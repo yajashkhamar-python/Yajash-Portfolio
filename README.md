@@ -8,7 +8,7 @@ Designed with a clean, typography-focused aesthetic, structured layout hierarchy
 
 ## 🌐 Live Demo
 
-- **Live URL**: `[Coming Soon - Deployed URL will be added here]` <!-- Replace with your live Vercel URL, e.g., https://yajash-portfolio.vercel.app/ -->
+- **Live URL**: [https://yajash-portfolio.vercel.app/](https://yajash-portfolio.vercel.app/)
 - **GitHub Repository**: [https://github.com/yajashkhamar-python/Yajash-Portfolio](https://github.com/yajashkhamar-python/Yajash-Portfolio)
 
 ---
@@ -216,4 +216,4 @@ This project is configured for deployment on [Vercel](https://vercel.com/):
 - **GitHub**: [https://github.com/yajashkhamar-python](https://github.com/yajashkhamar-python)
 - **LinkedIn**: [https://www.linkedin.com/in/yajashkhamar/](https://www.linkedin.com/in/yajashkhamar/)
 - **Email**: [yajashkhamar@gmail.com](mailto:yajashkhamar@gmail.com)
-- **Portfolio**: `[To be updated after deployment]`
+- **Portfolio**: [https://yajash-portfolio.vercel.app/](https://yajash-portfolio.vercel.app/)

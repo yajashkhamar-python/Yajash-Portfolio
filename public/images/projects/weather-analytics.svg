@@ -1,0 +1,59 @@
+<svg width="1000" height="650" viewBox="0 0 1000 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="650" fill="#F7F6F2"/>
+  <rect x="2" y="2" width="996" height="646" stroke="#DDE2E9" stroke-width="2"/>
+
+  <!-- Top bar -->
+  <rect x="2" y="2" width="996" height="52" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <circle cx="28" cy="26" r="5" fill="#DDE2E9"/>
+  <circle cx="44" cy="26" r="5" fill="#DDE2E9"/>
+  <circle cx="60" cy="26" r="5" fill="#DDE2E9"/>
+  <text x="85" y="32" font-family="'Newsreader', Georgia, serif" font-size="16" font-weight="600" fill="#17243A">SkyCast Analytics</text>
+  <text x="245" y="31" font-family="'Inter', sans-serif" font-size="12" fill="#667085">Station: Ahmedabad, Gujarat (23.0225° N, 72.5714° E) • Open-Meteo REST</text>
+  <rect x="850" y="14" width="125" height="24" rx="3" fill="#E8EEF7"/>
+  <text x="912" y="30" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#496DA8" text-anchor="middle">Metric Units (°C, km/h)</text>
+
+  <!-- Big Weather KPI cards -->
+  <rect x="30" y="75" width="220" height="130" rx="4" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <text x="50" y="105" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#667085" letter-spacing="0.5">SURFACE TEMPERATURE</text>
+  <text x="50" y="152" font-family="'Inter', sans-serif" font-size="34" font-weight="700" fill="#17243A">31.4°C</text>
+  <text x="50" y="180" font-family="'Inter', sans-serif" font-size="12" fill="#496DA8">Feels like 32.8°C • Clear Sky</text>
+
+  <rect x="270" y="75" width="220" height="130" rx="4" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <text x="290" y="105" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#667085" letter-spacing="0.5">ATMOSPHERIC PRESSURE</text>
+  <text x="290" y="152" font-family="'Inter', sans-serif" font-size="34" font-weight="700" fill="#17243A">1012 hPa</text>
+  <text x="290" y="180" font-family="'Inter', sans-serif" font-size="12" fill="#166534">Barometric system stable</text>
+
+  <rect x="510" y="75" width="220" height="130" rx="4" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <text x="530" y="105" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#667085" letter-spacing="0.5">WIND VELOCITY</text>
+  <text x="530" y="152" font-family="'Inter', sans-serif" font-size="34" font-weight="700" fill="#17243A">12.6 km/h</text>
+  <text x="530" y="180" font-family="'Inter', sans-serif" font-size="12" fill="#667085">Direction: WNW (290°)</text>
+
+  <rect x="750" y="75" width="220" height="130" rx="4" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <text x="770" y="105" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#667085" letter-spacing="0.5">RELATIVE HUMIDITY</text>
+  <text x="770" y="152" font-family="'Inter', sans-serif" font-size="34" font-weight="700" fill="#17243A">48%</text>
+  <text x="770" y="180" font-family="'Inter', sans-serif" font-size="12" fill="#166534">Comfort Index: Normal</text>
+
+  <!-- Big SVG Sparkline Chart -->
+  <rect x="30" y="225" width="940" height="265" rx="4" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <text x="55" y="260" font-family="'Newsreader', Georgia, serif" font-size="17" font-weight="500" fill="#17243A">24-Hour Diurnal Temperature &amp; Dew Point Curves</text>
+  <text x="55" y="282" font-family="'Inter', sans-serif" font-size="12" fill="#667085">Computed from Open-Meteo hourly reanalysis data feeds</text>
+
+  <!-- Chart lines -->
+  <line x1="55" y1="440" x2="940" y2="440" stroke="#F0EFEA" stroke-width="1"/>
+  <line x1="55" y1="390" x2="940" y2="390" stroke="#F0EFEA" stroke-width="1"/>
+  <line x1="55" y1="340" x2="940" y2="340" stroke="#F0EFEA" stroke-width="1"/>
+
+  <!-- Temperature curve -->
+  <path d="M55 420 Q 200 450 350 370 T 600 310 T 800 360 T 940 300" fill="none" stroke="#496DA8" stroke-width="3"/>
+  <circle cx="940" cy="300" r="5" fill="#496DA8"/>
+  <text x="890" y="285" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#496DA8">Now: 31.4°C</text>
+
+  <!-- Dew point curve -->
+  <path d="M55 350 Q 250 320 450 340 T 750 380 T 940 385" fill="none" stroke="#99A4B3" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Footer guide -->
+  <rect x="30" y="510" width="940" height="110" rx="4" fill="#E8EEF7" stroke="#D2DFEE"/>
+  <text x="55" y="548" font-family="'Newsreader', Georgia, serif" font-size="15" font-weight="500" fill="#17243A">SkyCast Analytics — Weather Analytics &amp; Visualizations</text>
+  <text x="55" y="572" font-family="'Inter', sans-serif" font-size="12" fill="#667085">Live deployment at: weather-analytics-dashboard-navy.vercel.app</text>
+  <text x="55" y="596" font-family="'JetBrains Mono', monospace" font-size="11" fill="#496DA8">Engineered with React + Open-Meteo REST API + Lightweight SVG Data Charts</text>
+</svg>

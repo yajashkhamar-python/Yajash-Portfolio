@@ -1,0 +1,365 @@
+/* ==========================================================================
+   DESIGN TOKENS & RESPONSIVE SCALING SYSTEM
+   Direction: Google Stitch Light Theme with Muted Cobalt-Blue Accents
+   Palette:
+     - Main Background: warm white / light blue-white #F8F9FF
+     - Surface Bright / White: #FFFFFF
+     - Surface Container Low: #EFF4FF
+     - Surface Container: #E5EEFF
+     - Primary Text: Deep Navy #0B1C30
+     - Secondary Text: Muted Slate #565E74 / #434655
+     - Primary Cobalt Accent: #004AC6 / #2563EB
+     - Primary Accent Hover: #003EA8
+     - Thin Subtle Borders: #D3E4FE / #C3C6D7
+   Typography:
+     - Headings: 'Space Grotesk', sans-serif
+     - Body: 'Hanken Grotesk', sans-serif
+     - Technical: 'JetBrains Mono', monospace
+   ========================================================================== */
+
+:root {
+  /* Google Stitch Light Palette Tokens */
+  --bg-main: #F8F9FF;
+  --bg-surface: #FFFFFF;
+  --bg-surface-low: #EFF4FF;
+  --bg-surface-container: #E5EEFF;
+  --bg-surface-high: #DCE9FF;
+  --bg-accent-soft: rgba(0, 74, 198, 0.08);
+
+  --text-primary: #0B1C30;        /* Deep navy */
+  --text-secondary: #565E74;      /* Muted slate */
+  --text-muted: #737686;          /* Muted label outline */
+  --text-on-accent: #FFFFFF;
+
+  --accent-primary: #004AC6;      /* Cobalt blue */
+  --accent-container: #2563EB;
+  --accent-hover: #003EA8;
+  --accent-light: #DBE1FF;
+  --accent-glow: rgba(0, 74, 198, 0.16);
+
+  --border-subtle: #E2E8F0;
+  --border-color: #C3C6D7;
+  --border-light: rgba(195, 198, 215, 0.6);
+  --border-primary: rgba(0, 74, 198, 0.3);
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Layout Widths (Spacious Desktop: 88–92% available width, max 1560px) */
+  --container-max-width: 1560px;
+  --container-padding: 4rem; /* 64px desktop side padding */
+  --section-spacing-y: 6.5rem;
+  --section-spacing-sm: 4rem;
+
+  /* Restrained Card Shadows */
+  --shadow-sm: 0 1px 3px rgba(11, 28, 48, 0.05);
+  --shadow-card: 0 4px 20px -2px rgba(11, 28, 48, 0.05), 0 0 0 1px var(--border-light);
+  --shadow-hover: 0 10px 30px -4px rgba(0, 74, 198, 0.12), 0 0 0 1px var(--accent-primary);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   RESET & GLOBAL VIEWPORT
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--bg-main);
+  color-scheme: light;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root,
+.portfolio-app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  flex: 1;
+}
+
+/* ==========================================================================
+   CONTAINER & SECTION ARCHITECTURE
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.section-wrapper {
+  padding-top: var(--section-spacing-y);
+  padding-bottom: var(--section-spacing-y);
+  position: relative;
+  scroll-margin-top: 72px;
+}
+
+section[id] {
+  scroll-margin-top: 72px;
+}
+
+/* Alternate light blue-grey background section */
+.section-alt {
+  background-color: rgba(239, 244, 255, 0.6);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+/* ==========================================================================
+   TYPOGRAPHY SPECIFICATIONS
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 1.0625rem; /* 17px body font */
+  line-height: 1.75;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+   SHARED SECTION HEADERS
+   ========================================================================== */
+
+.section-header-stitch {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+@media (min-width: 768px) {
+  .section-header-stitch {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+
+.section-header-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.section-header-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.25rem, 3.6vw, 2.75rem); /* 36–44px desktop */
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.section-header-desc {
+  font-size: 1.0625rem; /* 17px */
+  color: var(--text-secondary);
+  max-width: 540px;
+  line-height: 1.68;
+}
+
+/* ==========================================================================
+   BUTTONS (GOOGLE STITCH SPECIFICATION)
+   ========================================================================== */
+
+.btn-primary-stitch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-on-accent);
+  background-color: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 14px var(--accent-glow);
+}
+
+.btn-primary-stitch:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0, 74, 198, 0.22);
+}
+
+.btn-secondary-stitch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary-stitch:hover {
+  background-color: var(--bg-surface-low);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  transform: translateY(-1px);
+}
+
+.btn-resume-header,
+.btn-talk-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 1rem;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--accent-primary);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.btn-resume-header:hover,
+.btn-talk-header:hover {
+  background-color: var(--accent-primary);
+  color: var(--text-on-accent);
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS & VIEWPORT SCALING
+   ========================================================================== */
+
+@media (min-width: 1600px) {
+  :root {
+    --container-max-width: 1560px;
+    --container-padding: 4.5rem; /* ~72px */
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  :root {
+    --container-max-width: 1420px;
+    --container-padding: 3.5rem; /* 56px */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  :root {
+    --container-padding: 2.25rem; /* 36px */
+    --section-spacing-y: 5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --container-padding: 1.25rem; /* 20px */
+    --section-spacing-y: 3.75rem;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.15s;
+  animation-fill-mode: backwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

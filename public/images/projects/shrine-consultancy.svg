@@ -1,0 +1,47 @@
+<svg width="1000" height="650" viewBox="0 0 1000 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="650" fill="#F7F6F2"/>
+  <rect x="2" y="2" width="996" height="646" stroke="#DDE2E9" stroke-width="2"/>
+
+  <!-- Top bar -->
+  <rect x="2" y="2" width="996" height="58" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <circle cx="28" cy="29" r="5" fill="#DDE2E9"/>
+  <circle cx="44" cy="29" r="5" fill="#DDE2E9"/>
+  <circle cx="60" cy="29" r="5" fill="#DDE2E9"/>
+  <text x="85" y="36" font-family="'Newsreader', Georgia, serif" font-size="18" font-weight="700" fill="#17243A">SHRINE CONSULTANCY</text>
+  <text x="650" y="36" font-family="'Inter', sans-serif" font-size="13" fill="#667085">Advisory</text>
+  <text x="735" y="36" font-family="'Inter', sans-serif" font-size="13" fill="#667085">Practice Areas</text>
+  <text x="850" y="36" font-family="'Inter', sans-serif" font-size="13" fill="#667085">Insights</text>
+  <rect x="915" y="16" width="65" height="26" rx="2" fill="#17243A"/>
+  <text x="947" y="33" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Inquire</text>
+
+  <!-- Editorial Hero Banner for Shrine Consultancy -->
+  <rect x="36" y="85" width="928" height="235" rx="4" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <text x="66" y="132" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#496DA8" letter-spacing="1">STRATEGIC ADVISORY &amp; CORPORATE STEWARDSHIP</text>
+  <text x="66" y="178" font-family="'Newsreader', Georgia, serif" font-size="30" font-weight="500" fill="#17243A">Guiding enterprises through structural transitions.</text>
+  <text x="66" y="215" font-family="'Inter', sans-serif" font-size="14" fill="#667085">A tailored digital web presence designed for Shrine Consultancy, highlighting practice areas and verified advisory services.</text>
+  
+  <rect x="66" y="242" width="175" height="42" rx="3" fill="#17243A"/>
+  <text x="153" y="268" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Schedule Consultation</text>
+
+  <!-- 3 Practice columns -->
+  <rect x="36" y="340" width="295" height="155" rx="4" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <text x="56" y="375" font-family="'Newsreader', Georgia, serif" font-size="17" font-weight="600" fill="#17243A">Corporate Restructuring</text>
+  <text x="56" y="405" font-family="'Inter', sans-serif" font-size="12" fill="#667085">Capital allocation optimization and operational resilience for business pivots.</text>
+  <text x="56" y="462" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#496DA8">Practice Details →</text>
+
+  <rect x="352" y="340" width="295" height="155" rx="4" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <text x="372" y="375" font-family="'Newsreader', Georgia, serif" font-size="17" font-weight="600" fill="#17243A">M&amp;A Integration</text>
+  <text x="372" y="405" font-family="'Inter', sans-serif" font-size="12" fill="#667085">Systematic operational synthesis and digital infrastructure unification.</text>
+  <text x="372" y="462" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#496DA8">Practice Details →</text>
+
+  <rect x="668" y="340" width="295" height="155" rx="4" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <text x="688" y="375" font-family="'Newsreader', Georgia, serif" font-size="17" font-weight="600" fill="#17243A">Regulatory Alignment</text>
+  <text x="688" y="405" font-family="'Inter', sans-serif" font-size="12" fill="#667085">Compliance framework analysis for cross-jurisdictional standards.</text>
+  <text x="688" y="462" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#496DA8">Practice Details →</text>
+
+  <!-- Footer guide -->
+  <rect x="36" y="515" width="928" height="105" rx="4" fill="#E8EEF7" stroke="#D2DFEE"/>
+  <text x="60" y="555" font-family="'Newsreader', Georgia, serif" font-size="15" font-weight="500" fill="#17243A">Shrine Consultancy — Practical Client Website Project</text>
+  <text x="60" y="580" font-family="'Inter', sans-serif" font-size="12" fill="#667085">Live deployment at: shrine-consultancy.vercel.app</text>
+  <text x="60" y="602" font-family="'JetBrains Mono', monospace" font-size="11" fill="#496DA8">Developed as a practical web engineering deliverable using React &amp; responsive typography</text>
+</svg>

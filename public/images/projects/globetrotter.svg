@@ -1,0 +1,57 @@
+<svg width="1000" height="650" viewBox="0 0 1000 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="650" fill="#F7F6F2"/>
+  <rect x="2" y="2" width="996" height="646" stroke="#DDE2E9" stroke-width="2"/>
+
+  <!-- Top bar -->
+  <rect x="2" y="2" width="996" height="52" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <circle cx="28" cy="26" r="5" fill="#DDE2E9"/>
+  <circle cx="44" cy="26" r="5" fill="#DDE2E9"/>
+  <circle cx="60" cy="26" r="5" fill="#DDE2E9"/>
+  <text x="85" y="32" font-family="'Newsreader', Georgia, serif" font-size="16" font-weight="600" fill="#17243A">GlobeTrotter</text>
+  <text x="195" y="31" font-family="'Inter', sans-serif" font-size="12" fill="#667085">Interactive Travel Geography &amp; Destination Exploration Game</text>
+  <rect x="850" y="14" width="125" height="24" rx="12" fill="#E8EEF7"/>
+  <text x="912" y="30" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#496DA8" text-anchor="middle">Score: 2,450 pts</text>
+
+  <!-- Left: Clue card & Destination hint -->
+  <rect x="30" y="75" width="460" height="425" rx="4" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <rect x="30" y="75" width="460" height="195" rx="4" fill="#E8EEF7"/>
+  <!-- Landscape outline in card -->
+  <path d="M30 245 L120 180 L200 220 L310 150 L420 230 L490 190 L490 270 L30 270 Z" fill="#D2DFEE"/>
+  <circle cx="390" cy="130" r="22" fill="#C99A64"/>
+  <text x="50" y="112" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#496DA8" letter-spacing="1">MYSTERY DESTINATION #04</text>
+
+  <text x="50" y="305" font-family="'Newsreader', Georgia, serif" font-size="18" font-weight="600" fill="#17243A">Clue 1: Ancient Mountain Gateway</text>
+  <text x="50" y="332" font-family="'Inter', sans-serif" font-size="13" fill="#667085" line-height="1.5">"Carved directly into vibrant rose-red sandstone cliffs, accessible through a winding mile-long gorge."</text>
+  
+  <rect x="50" y="380" width="420" height="42" rx="3" fill="#F7F6F2" stroke="#E5E8ED"/>
+  <text x="65" y="406" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#17243A">Fact Reveal: Capital of the Nabataean Empire (c. 300 BCE).</text>
+
+  <!-- Right: Guess options -->
+  <rect x="510" y="75" width="460" height="425" rx="4" fill="#FFFFFF" stroke="#DDE2E9"/>
+  <text x="535" y="112" font-family="'Newsreader', Georgia, serif" font-size="16" font-weight="600" fill="#17243A">Select the correct world landmark:</text>
+
+  <!-- Choice A -->
+  <rect x="535" y="135" width="410" height="54" rx="4" fill="#F7F6F2" stroke="#E5E8ED"/>
+  <text x="555" y="168" font-family="'Inter', sans-serif" font-size="14" font-weight="500" fill="#475569">A) Ephesus, Turkey</text>
+
+  <!-- Choice B (Correct highlight) -->
+  <rect x="535" y="202" width="410" height="54" rx="4" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="555" y="235" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#166534">B) Petra, Jordan  ✓</text>
+  <text x="880" y="235" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#166534">+500 pts</text>
+
+  <!-- Choice C -->
+  <rect x="535" y="269" width="410" height="54" rx="4" fill="#F7F6F2" stroke="#E5E8ED"/>
+  <text x="555" y="302" font-family="'Inter', sans-serif" font-size="14" font-weight="500" fill="#475569">C) Machu Picchu, Peru</text>
+
+  <!-- Choice D -->
+  <rect x="535" y="336" width="410" height="54" rx="4" fill="#F7F6F2" stroke="#E5E8ED"/>
+  <text x="555" y="369" font-family="'Inter', sans-serif" font-size="14" font-weight="500" fill="#475569">D) Luxor, Egypt</text>
+
+  <rect x="535" y="415" width="410" height="50" rx="3" fill="#17243A"/>
+  <text x="740" y="446" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Next Destination →</text>
+
+  <!-- Footer guide -->
+  <rect x="30" y="520" width="940" height="100" rx="4" fill="#E8EEF7" stroke="#D2DFEE"/>
+  <text x="55" y="558" font-family="'Newsreader', Georgia, serif" font-size="15" font-weight="500" fill="#17243A">GlobeTrotter — Travel Geography Web Game Concept</text>
+  <text x="55" y="582" font-family="'Inter', sans-serif" font-size="12" fill="#667085">Interactive game prototype available in source code repository: github.com/yajashkhamar-python/GlobeTrotter</text>
+</svg>
